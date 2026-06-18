@@ -463,3 +463,135 @@ body{font-family:var(--fn);background:var(--bg);color:var(--txt);line-height:1.6
   .skill-files-row    { grid-template-columns:1fr; }
   .ss-kpis            { grid-template-columns:repeat(2,1fr); }
 }
+
+/* ═══════════════════════════════════════════
+   DASHBOARD MOCK — dm-* classes
+   ═══════════════════════════════════════════ */
+.dash-mock { border:1px solid var(--b2); border-radius:var(--r); overflow:hidden; background:var(--bg3); }
+.dm-chrome { background:var(--s2); border-bottom:1px solid var(--b1); padding:9px 14px; display:flex; align-items:center; gap:8px; }
+.dmd { width:10px; height:10px; border-radius:50%; }
+.dm-url { flex:1; background:rgba(255,255,255,.05); border-radius:4px; padding:4px 10px; font-family:var(--mo); font-size:10.5px; color:var(--fnt); }
+.dm-body { padding:14px 16px; display:flex; flex-direction:column; gap:10px; }
+
+/* KPI row */
+.dm-kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; }
+.dm-kpi { background:var(--s1); border:1px solid var(--b1); border-radius:7px; padding:10px 8px; text-align:center; }
+.dm-kn { display:block; font-size:20px; font-weight:700; line-height:1.1; }
+.dm-kl { display:block; font-size:9.5px; color:var(--mut); margin-top:3px; }
+
+/* Filters */
+.dm-filters { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; }
+.dm-f { display:flex; flex-direction:column; gap:3px; }
+.dm-fl { font-size:9px; color:var(--fnt); text-transform:uppercase; letter-spacing:.08em; }
+.dm-fv { background:var(--s1); border:1px solid var(--b2); border-radius:5px; padding:5px 8px; font-size:10.5px; color:var(--txt); }
+
+/* Charts */
+.dm-charts { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
+.dm-chart { background:var(--s1); border:1px solid var(--b1); border-radius:7px; padding:10px 12px; }
+.dm-ct { font-size:10.5px; font-weight:600; color:var(--txt); margin-bottom:8px; }
+.dm-bars { display:flex; align-items:flex-end; gap:5px; height:60px; }
+.dm-bar { flex:1; border-radius:2px 2px 0 0; min-width:0; }
+.dm-grouped { display:flex; gap:18px; align-items:flex-end; }
+.dm-grp { display:flex; flex-direction:column; align-items:center; gap:4px; }
+.dm-gl { font-size:8.5px; color:var(--mut); text-align:center; }
+.dm-legend { display:flex; gap:8px; margin-top:8px; flex-wrap:wrap; }
+.dm-legend span { display:flex; align-items:center; gap:4px; font-size:9px; color:var(--mut); }
+.dm-legend span span { width:9px; height:9px; border-radius:2px; display:inline-block; }
+
+/* Data table */
+.dm-table { border:1px solid var(--b1); border-radius:6px; overflow:hidden; font-size:10px; }
+.dm-th { display:grid; grid-template-columns:2.5fr 1fr 1.5fr .7fr .6fr .6fr; gap:0; background:var(--s2); padding:7px 10px; font-weight:600; color:var(--mut); letter-spacing:.04em; }
+.dm-tr { display:grid; grid-template-columns:2.5fr 1fr 1.5fr .7fr .6fr .6fr; gap:0; padding:6px 10px; border-top:1px solid var(--b1); font-family:var(--mo); color:var(--mut); align-items:center; }
+.dm-tr-ok  { background:rgba(39,174,96,.04); }
+.dm-tr-gap { background:rgba(231,76,60,.05); }
+.dm-yes { color:var(--grn); font-weight:600; }
+.dm-gap { color:#F87171; font-weight:600; }
+.dm-exports { display:flex; gap:8px; padding-top:4px; }
+.dm-btn { font-size:11px; font-weight:600; border:none; border-radius:6px; padding:7px 14px; cursor:default; }
+.dm-btn-xl  { background:rgba(39,174,96,.15);  color:#27AE60; }
+.dm-btn-pdf { background:rgba(231,76,60,.15);   color:#E74C3C; }
+
+/* ═══════════════════════════════════════════
+   JIRA SKILL CALLOUT — sc-* classes
+   ═══════════════════════════════════════════ */
+.skill-callout { background:rgba(248,113,113,.06); border:1px solid rgba(248,113,113,.2); border-radius:var(--r); overflow:hidden; }
+.sc-header { display:flex; align-items:center; gap:10px; padding:10px 16px; border-bottom:1px solid rgba(248,113,113,.15); background:rgba(248,113,113,.08); }
+.sc-icon  { font-size:16px; flex-shrink:0; }
+.sc-title { font-family:var(--mo); font-size:12px; font-weight:500; color:var(--txt); flex:1; }
+.sc-badge { font-family:var(--mo); font-size:10px; font-weight:600; background:rgba(248,113,113,.15); color:#F87171; border:1px solid rgba(248,113,113,.3); border-radius:4px; padding:3px 9px; flex-shrink:0; }
+.sc-body  { padding:14px 16px; }
+.sc-flow  { display:grid; grid-template-columns:1fr auto 1fr auto 1fr auto 1fr; gap:6px; align-items:center; margin-bottom:12px; }
+.sc-step  { background:var(--s1); border:1px solid var(--b1); border-radius:6px; padding:8px 10px; display:flex; align-items:flex-start; gap:8px; }
+.sc-on    { border-color:rgba(248,113,113,.3); background:rgba(248,113,113,.07); }
+.sc-n     { width:20px; height:20px; border-radius:50%; flex-shrink:0; background:var(--s2); color:var(--mut); font-family:var(--mo); font-size:10px; display:flex; align-items:center; justify-content:center; margin-top:1px; }
+.sc-on .sc-n { background:#F87171; color:#0A0D16; }
+.sc-t  { font-size:11px; font-weight:600; color:var(--txt); }
+.sc-s  { font-size:9.5px; color:var(--mut); margin-top:2px; }
+.sc-arr { color:var(--fnt); font-size:14px; text-align:center; }
+
+/* ═══════════════════════════════════════════
+   MCP SECTION
+   ═══════════════════════════════════════════ */
+.mcp-section { margin-bottom:2.5rem; }
+.mcp-proj { font-family:var(--mo); font-size:11px; color:var(--teal); margin-top:auto; padding-top:6px; }
+.mcp-card { display:flex; flex-direction:column; gap:8px; }
+
+/* ═══════════════════════════════════════════
+   SKILL FILES SECTION
+   ═══════════════════════════════════════════ */
+.skill-section { margin-bottom:2.5rem; }
+.skill-section-label { font-family:var(--mo); font-size:11px; color:var(--teal); letter-spacing:.12em; text-transform:uppercase; margin-bottom:1rem; }
+.skill-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+.sf { background:var(--s1); border:1px solid var(--b1); border-radius:var(--r); padding:1.25rem; transition:border-color .2s; }
+.sf:hover { border-color:var(--b2); }
+.sf-name { font-family:var(--mo); font-size:10.5px; color:var(--teal); margin-bottom:.75rem; padding-bottom:.75rem; border-bottom:1px solid var(--b1); }
+.sf-d { font-size:12.5px; color:var(--mut); line-height:1.7; }
+
+/* ═══════════════════════════════════════════
+   SKILL MINI TAGS
+   ═══════════════════════════════════════════ */
+.skill-mini-row { display:flex; flex-wrap:wrap; gap:6px; }
+.sm-tag { font-family:var(--mo); font-size:10px; border-radius:4px; padding:3px 9px; }
+.sm-teal { background:rgba(0,201,167,.08); color:var(--teal); border:1px solid rgba(0,201,167,.2); }
+
+/* ═══════════════════════════════════════════
+   TOOL CARD ICON WRAPPERS
+   ═══════════════════════════════════════════ */
+.ti-wrap { width:42px; height:42px; border-radius:var(--r); display:flex; align-items:center; justify-content:center; font-size:20px; }
+.ti-v    { background:var(--purd); }
+.ti-g    { background:var(--grnd); }
+.ti-b    { background:var(--blud); }
+.ti-d    { background:var(--s2); }
+.ti-r    { background:rgba(248,113,113,.12); }
+.ti-conf { background:rgba(96,165,250,.12); }
+.ti-o    { background:var(--orgd); }
+.ti-chaos{ background:var(--grnd); }
+.ti-p    { background:var(--purd); }
+.ti-t    { background:var(--td); }
+.tbadge-jira { background:rgba(248,113,113,.12); color:#F87171; border-color:rgba(248,113,113,.25); }
+
+/* ═══════════════════════════════════════════
+   MISC NEW UTILS
+   ═══════════════════════════════════════════ */
+.mt8 { margin-top:8px; }
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE ADDITIONS
+   ═══════════════════════════════════════════ */
+@media(max-width:900px) {
+  .dm-kpis    { grid-template-columns:repeat(2,1fr); }
+  .dm-charts  { grid-template-columns:1fr 1fr; }
+  .dm-filters { grid-template-columns:1fr 1fr; }
+  .dm-th, .dm-tr { grid-template-columns:2fr 1fr .7fr .6fr; }
+  .dm-th span:nth-child(2),.dm-tr span:nth-child(2),
+  .dm-th span:nth-child(3),.dm-tr span:nth-child(3) { display:none; }
+  .sc-flow  { grid-template-columns:1fr; }
+  .sc-arr   { display:none; }
+  .skill-grid { grid-template-columns:1fr 1fr; }
+}
+@media(max-width:640px) {
+  .dm-kpis    { grid-template-columns:repeat(2,1fr); }
+  .dm-charts  { grid-template-columns:1fr; }
+  .dm-filters { grid-template-columns:1fr; }
+  .skill-grid { grid-template-columns:1fr; }
+}
